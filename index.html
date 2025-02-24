@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<footer>
+    <script>
+window.addEventListener('mouseover', initLandbot, { once: true });
+window.addEventListener('touchstart', initLandbot, { once: true });
+var myLandbot;
+function initLandbot() {
+  if (!myLandbot) {
+    var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+    s.addEventListener('load', function() {
+      var myLandbot = new Landbot.Livechat({
+        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1626186-M0HYA3EJP91FOSDE/index.json',
+      });
+    });
+    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  }
+}
+</script>
+</footer>
+
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Edson Javier</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/foto.jpeg" alt="">
+            </div>
+            <h1>Edson Javier Paco Limachi</h1>
+            <h2>Ingeniero de Sistemas </h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/edsonpl12"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://github.com/EdsonPacoL10"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/59173734591?text=Hola,%20contactarme"><i class="fa-brands fa-whatsapp"></i></a>
+                <a onclick="mostrarMensaje()"><i class="fa-solid fa-envelope"></i></a>
+               
+            </div>
+        </div>
+    </section>
+   
+    <!-- SECCION SOBRE MI -->
+
+    <section id="sobremi" class="sobremi">
+    
+        <div class="contenido-seccion" >
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Edson Paco.</span>Un estudiante de la carrera de Ingeniería de Sistemas con un gran entusiasmo por aplicar los conocimientos en el mundo laboral. Durante mi formación académica, adquirí habilidades en diversas áreas de la ingeniería de software , desarrollo de sistemas, auditoria en sistemas y demas conocimientos. <br>
+            Soy una persona orientada a los detalles y enfocada en la resolución de problemas. Me apasiona buscar soluciones eficientes y efectivas para los desafíos tecnológicos que se presentan. Además, tengo habilidades sólidas en programación web y aplicativos de escritorio, bases de datos como ser MySql, SQLserver y Oracle. Durante mi formación, también desarrollé habilidades de trabajo en equipo y comunicación efectiva. Soy una persona abierta a nuevas oportunidades y desafíos para aplicar mi conocimiento y contribuir al desarrollo de soluciones innovadoras. No dudes en ponerse en contacto conmigo. Estoy emocionado/a de explorar cómo puedo aportar mis habilidades y conocimientos para el éxito de tu empresa o proyecto. <br> <span> ¡Espero tener la oportunidad de conversar contigo pronto!</span>
+            </p>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            29-Julio-1999
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            73734591
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            edsonpaco100@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Av. America/El alto 
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-windows"></i>
+                            <span>WINDOWS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop"></i>
+                            <span>COMPUTADORAS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="Doc/Curriculum Vitae.pdf" download>           
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+            
+            <a href="Doc/Curriculum Vitae.pdf" target="_blank">           
+                <button>
+                    Ver CV <i class="fa-solid fa-eye"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+            
+    </section>
+    </div>
+    <!-- mapa de ubicacion -->
+    <section class="mapa" id="mapa">
+        <div class="contenido-mapa">
+            <h2>Ubicacion</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3825.005042306664!2d-68.18689142611407!3d-16.525843084221776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbo!4v1687231721563!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>       
+
+
+    </section>
+
+    <!-- SECCION HABILIDADES-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>HABILIDADES</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>HABILIDADES TECNICAS</h3>
+                    <div class="skill">
+                        <span>JAVASCRIPT</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JAVA, C# Y PYTHON </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>WORDPRESS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>GESTORES DE BASE DE DATOS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SERVIDORES</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>AUDITORIA EN SISTEMAS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>HABILIDADES PROFESIONALES</h3>
+                    <div class="skill">
+                        <span>COMUNICACION</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>TRABAJO EN EQUIPO</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CREATIVIDAD</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>DEDICACION</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>DISEÑO DE SISTEMAS </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MANEJO DE METODOLOGIAS </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MODELADO Y SIMULACIONES DE SISTEMAS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>SEGUNDARIA</h4>
+                        <span class="casa">E.U. JUAN FEDERICO ZUAZO</span>
+                        <span class="fecha">2010-2016</span>
+                        <p>Educacion nivel segundaria en colegio fiscal finalizada con exito</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>UNIVERSIDAD</h4>
+                        <span class="casa">UNIVERSIDAD PUBLICA DE EL ALTO (UPEA)</span>
+                        <span class="fecha">2018-2023</span>
+                        <p>Actualmente cursando quinto año de carrea ingeniera de sistemas </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>CAJERO</h4>
+                        <span class="casa">BURGER KING</span>
+                        <span class="fecha">2018-2023</span>
+                        <p>Trabajo desempeñado con dedicacion y responsabilidad, donde se obtuvieron valores como: trabajo bajo precion, amabilidad, trabajo en equipo y manejo de gran cantidad de dinero </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Lider Entrenador</h4>
+                        <span class="casa">BURGER KING</span>
+                        <span class="fecha">2024-2025</span>
+                        <p>Responsable de la capacitación y formación del personal, fomentando el desarrollo de habilidades clave como el liderazgo, la responsabilidad y la mejora continua. Comprometido con el crecimiento del equipo y la optimización del desempeño organizacional.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+     <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                
+                <div class="proyecto">
+                    <img src="img_proyectos/AcademiaLider.JPG"  width="290" height="290">
+                    <div class="overlay">
+                        <h3>GIT HUB</h3>
+                        <div class="btn">
+                            <a href="https://github.com/EdsonPacoL10/SistemaDeRegistroAcademiaLider"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3>DRIVE</h3>
+                        <div class="btn">
+                            <a href="https://drive.google.com/file/d/1GSNnb7MDM5FODqsiu3x59FKR2AkJJBkP/view?usp=sharing"><i class="fa-brands fa-google-drive"></i></a>
+                        </div>
+                        
+                        <h3>Academia lider</h3>
+                        <p>Software de escritorio C#</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img_proyectos/EstimacionCosto.jpg"  width="290" height="290">
+                    <div class="overlay">
+                        <h3>GIT HUB</h3>
+                        <div class="btn">
+                            <a href="https://github.com/EdsonPacoL10/EstimacionDeCostos"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3>DRIVE</h3>
+                        <div class="btn">
+                            <a href="https://drive.google.com/file/d/1PcnRdTnjBHYG8ZwC5-ysc6MbdYgeeq7d/view?usp=sharing"><i class="fa-brands fa-google-drive"></i></a>
+                        </div>
+                        <h3>Estimacion de costo</h3>
+                        <p>Software Web en PHP</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img_proyectos/Geolocalizacion.jpg"  width="290" height="290" alt="Descripción de la imagen">
+                    <div class="overlay">
+                        <h3>GIT HUB</h3>
+                        <div class="btn">
+                            <a href="https://github.com/EdsonPacoL10/GEOLOCALIZACION"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3>DRIVE</h3>
+                        <div class="btn">
+                            <a href="https://drive.google.com/file/d/1e0tK5oiyoNNAB_Ejxw3DkuF24CypF2sb/view?usp=sharing"><i class="fa-brands fa-google-drive"></i></a>
+                        </div>
+                    
+                        <h3>Geolocalizacion</h3>
+                        <p>Software Web en JAVA</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img_proyectos/Calculadora.jpg"  width="290" height="290" alt="Descripción de la imagen">
+                    <div class="overlay">
+                        <h3>GIT HUB</h3>
+                        <div class="btn">
+                            <a href="https://github.com/EdsonPacoL10/Calculadora"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3>DRIVE</h3>
+                        <div class="btn">
+                            <a href="NO DISPONIBLE"><i class="fa-brands fa-google-drive"></i></a>
+                        </div>
+                        <h3>Calculadora</h3>
+                        <p>Software escritorio en C#</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img_proyectos/ReconocimientoImagen.jpg"  width="290" height="290" alt="Descripción de la imagen">
+                    <div class="overlay">
+                        <h3>GIT HUB</h3>
+                        <div class="btn">
+                            <a href="https://github.com/EdsonPacoL10/ReconocimientoDeImagenes"></i></a>
+                        </div>
+                        <h3>DRIVE</h3>
+                        <div class="btn">
+                            <a href="https://drive.google.com/file/d/1TxprEhYNVvZ2l2PCQMBPtoWiKBFO9Y7r/view?usp=sharing"><i class="fa-brands fa-google-drive"></i></a>
+                        </div>
+                        <h3>Reconocimiento de Imagen</h3>
+                        <p>Software de IA en Python</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img_proyectos/SistemaActivosFijos.jpg"  width="290" height="290" alt="Descripción de la imagen">
+                    <div class="overlay">
+                        <h3>GIT HUB</h3>
+                        <div class="btn">
+                            <a href="https://github.com/EdsonPacoL10/RegistroDeActivosFijos"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3>DRIVE</h3>
+                        <div class="btn">
+                            <a href="https://drive.google.com/file/d/1Gow-r_95UeGaG2Rrcbt8LK6saa4Cwg4a/view?usp=sharing"><i class="fa-brands fa-google-drive"></i></a>
+                        </div>
+                        <h3>Sistema Activos Fijos</h3>
+                        <p>Software de escritorio en C#</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTANOS</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                 <div class="col">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Cam. viacha / Av. America / El Alto
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 73734591
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: edsonpaco100@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                    <button  onclick="window.location.href = 'https://forms.gle/7BXthuRJCQVwcH3w6';">CONTACTANOS AQUI <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>  
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <div class="container">
+                        <div class="lado" id="lado_a"></div>
+                        <div class="lado" id="lado_b"></div>
+                        <div class="lado" id="lado_c"></div>
+                        <div class="lado" id="lado_d"></div>
+                        <div class="lado_2" id="lado_e"></div>
+                        <div class="lado_2" id="lado_f"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/edsonpl12"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://t.me/EdsonJavierPaco"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://github.com/EdsonPacoL10#"><i class="fa-brands fa-github"></i></a>
+            <a href="https://wa.me/59173734591?text=Hola,%20contactarme"><i class="fa-brands fa-whatsapp"></i></a>
+   
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+     <script>
+  function mostrarMensaje() {
+    alert("Contactenos al correo : edsonpaco100@gmail.com");
+    }
+    </script>
+
+</body>
+</html>
